@@ -18,44 +18,62 @@ class GameScene: SKScene {
         /* Setup your scene here */
         
         // Physics
-        self.physicsWorld.gravity = CGVectorMake(0.0, 3.0);
+        self.physicsWorld.gravity = CGVectorMake(0.0, -3.0);
         
         // Boo Setup
-        var booTexture1 = SKTexture(imageNamed:"boo1")
-        var booTexture2 = SKTexture(imageNamed:"boo2")
+        var booTexture1 = SKTexture(imageNamed:"f1")
+        var booTexture2 = SKTexture(imageNamed:"f2")
+        var booTexture3 = SKTexture(imageNamed:"f3")
+        var booTexture4 = SKTexture(imageNamed:"f4")
+
+
         booTexture1.filteringMode = SKTextureFilteringMode.Nearest
         
         
         boo = SKSpriteNode(texture: booTexture1)
         
-        boo.position =  CGPoint(x: CGRectGetMidX(self.frame), y: CGRectGetMidY(self.frame))
+        boo.position = CGPoint(x: self.frame.size.width * 0.1, y: self.frame.size.height * 0.6)
+            
+
         
-        var animation = SKAction.animateWithTextures([booTexture1, booTexture2], timePerFrame: 0.3)
+        var animation = SKAction.animateWithTextures([booTexture1, booTexture2, booTexture3, booTexture4], timePerFrame: 0.3)
         var makeBooFlap = SKAction.repeatActionForever(animation)
         boo.runAction(makeBooFlap)
         
-        boo.yScale:
+        
 
-        //        CGPoint(x: self.frame.size.width * 0.35, y: self.frame.size.height * 0.6)
+        //
 
-        boo.xScale = 0.15
-        boo.yScale = 0.15
+        boo.xScale = 2.0
+        boo.yScale = 2.0
 
-        boo.zPosition = 10
+        boo.zPosition = 20
 
         boo.physicsBody = SKPhysicsBody(circleOfRadius:boo.size.height / 2.0)
-        boo.physicsBody?.dynamic = false
+        boo.physicsBody?.dynamic = true
         boo.physicsBody?.allowsRotation = false
         
         self.addChild(boo)
         
-        var backgroundImage = SKTexture(imageNamed: "backgroundImage")
-        var bg = SKSpriteNode(texture: backgroundImage)
-        bg.position = CGPoint(x: CGRectGetMidX(self.frame), y: CGRectGetMidY(self.frame))
-        bg.xScale = 2.0
-        bg.yScale = 2.0
+        var backgroundImage = SKTexture(imageNamed: "farback")
+        var farBg = SKSpriteNode(texture: backgroundImage)
+        farBg.position = CGPoint(x: CGRectGetMidX(self.frame), y: CGRectGetMidY(self.frame))
+        farBg.xScale = 2.0
+        farBg.yScale = 2.0
+        
+        
 
-        self.addChild(bg)
+        self.addChild(farBg)
+        
+        
+        var foregroundBackgroundImage = SKTexture(imageNamed: "farback")
+        var foreGroundBg = SKSpriteNode(texture: foregroundBackgroundImage)
+        foreGroundBg.position = CGPoint(x: CGRectGetMidX(self.frame), y: CGRectGetMidY(self.frame))
+        foreGroundBg.xScale = 1.0
+        foreGroundBg.yScale = 1.0
+        
+        foreGroundBg.zPosition = 10
+        self.addChild(foreGroundBg)
 
         
         // Ground
@@ -76,13 +94,16 @@ class GameScene: SKScene {
 
         
     }
-    
+
     override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
         /* Called when a touch begins */
         println("Flappy is Flying")
+
+        
         for touch in (touches as! Set<UITouch>) {
-            
-            
+            boo.physicsBody?.velocity = CGVectorMake(0,0)
+
+            boo.physicsBody?.applyImpulse(CGVectorMake(0, 35))
             
         }
     }
