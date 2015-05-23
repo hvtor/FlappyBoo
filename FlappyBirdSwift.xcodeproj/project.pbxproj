@@ -17,12 +17,31 @@
 		E90B49D31B0A101400CFF754 /* FlappyBirdSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B49D21B0A101400CFF754 /* FlappyBirdSwiftTests.swift */; };
 		E90B4A1C1B0D04C100CFF754 /* boo1.png in Resources */ = {isa = PBXBuildFile; fileRef = E90B4A1A1B0D04C100CFF754 /* boo1.png */; };
 		E90B4A1D1B0D04C100CFF754 /* boo2.png in Resources */ = {isa = PBXBuildFile; fileRef = E90B4A1B1B0D04C100CFF754 /* boo2.png */; };
+		E9763BF71B0F6D0B00680833 /* activeButton.png in Resources */ = {isa = PBXBuildFile; fileRef = E9763BF51B0F6D0B00680833 /* activeButton.png */; };
+		E9763BF81B0F6D0B00680833 /* defaultButton.png in Resources */ = {isa = PBXBuildFile; fileRef = E9763BF61B0F6D0B00680833 /* defaultButton.png */; };
+		E9763BFC1B0FA31900680833 /* asteroid.png in Resources */ = {isa = PBXBuildFile; fileRef = E9763BFB1B0FA31900680833 /* asteroid.png */; };
+		E9763C001B10F84300680833 /* clouds.png in Resources */ = {isa = PBXBuildFile; fileRef = E9763BFF1B10F84300680833 /* clouds.png */; };
 		E9EE2ED11B0EC79C007643D7 /* starfield.png in Resources */ = {isa = PBXBuildFile; fileRef = E9EE2ED01B0EC79C007643D7 /* starfield.png */; };
 		E9EE2ED61B0EC7DD007643D7 /* f1.png in Resources */ = {isa = PBXBuildFile; fileRef = E9EE2ED21B0EC7DD007643D7 /* f1.png */; };
 		E9EE2ED71B0EC7DD007643D7 /* f2.png in Resources */ = {isa = PBXBuildFile; fileRef = E9EE2ED31B0EC7DD007643D7 /* f2.png */; };
 		E9EE2ED81B0EC7DD007643D7 /* f3.png in Resources */ = {isa = PBXBuildFile; fileRef = E9EE2ED41B0EC7DD007643D7 /* f3.png */; };
 		E9EE2ED91B0EC7DD007643D7 /* f4.png in Resources */ = {isa = PBXBuildFile; fileRef = E9EE2ED51B0EC7DD007643D7 /* f4.png */; };
 		E9EE2EDB1B0EC876007643D7 /* farback.png in Resources */ = {isa = PBXBuildFile; fileRef = E9EE2EDA1B0EC876007643D7 /* farback.png */; };
+		E9EE2EE21B0ED3C2007643D7 /* h1.png in Resources */ = {isa = PBXBuildFile; fileRef = E9EE2EDC1B0ED3C2007643D7 /* h1.png */; };
+		E9EE2EE31B0ED3C2007643D7 /* h2.png in Resources */ = {isa = PBXBuildFile; fileRef = E9EE2EDD1B0ED3C2007643D7 /* h2.png */; };
+		E9EE2EE41B0ED3C2007643D7 /* h3.png in Resources */ = {isa = PBXBuildFile; fileRef = E9EE2EDE1B0ED3C2007643D7 /* h3.png */; };
+		E9EE2EE51B0ED3C2007643D7 /* h4.png in Resources */ = {isa = PBXBuildFile; fileRef = E9EE2EDF1B0ED3C2007643D7 /* h4.png */; };
+		E9EE2EE61B0ED3C2007643D7 /* h5.png in Resources */ = {isa = PBXBuildFile; fileRef = E9EE2EE01B0ED3C2007643D7 /* h5.png */; };
+		E9EE2EE71B0ED3C2007643D7 /* h6.png in Resources */ = {isa = PBXBuildFile; fileRef = E9EE2EE11B0ED3C2007643D7 /* h6.png */; };
+		E9EE2EED1B0ED880007643D7 /* nebulla1.png in Resources */ = {isa = PBXBuildFile; fileRef = E9EE2EE81B0ED880007643D7 /* nebulla1.png */; };
+		E9EE2EEE1B0ED880007643D7 /* nebulla2.png in Resources */ = {isa = PBXBuildFile; fileRef = E9EE2EE91B0ED880007643D7 /* nebulla2.png */; };
+		E9EE2EEF1B0ED880007643D7 /* nebulla3.png in Resources */ = {isa = PBXBuildFile; fileRef = E9EE2EEA1B0ED880007643D7 /* nebulla3.png */; };
+		E9EE2EF01B0ED880007643D7 /* nebulla4.png in Resources */ = {isa = PBXBuildFile; fileRef = E9EE2EEB1B0ED880007643D7 /* nebulla4.png */; };
+		E9EE2EF11B0ED880007643D7 /* nebulla5.png in Resources */ = {isa = PBXBuildFile; fileRef = E9EE2EEC1B0ED880007643D7 /* nebulla5.png */; };
+		E9EE2EF61B0EDDCE007643D7 /* buttonDown.png in Resources */ = {isa = PBXBuildFile; fileRef = E9EE2EF21B0EDDCE007643D7 /* buttonDown.png */; };
+		E9EE2EF71B0EDDCE007643D7 /* buttonLeft.png in Resources */ = {isa = PBXBuildFile; fileRef = E9EE2EF31B0EDDCE007643D7 /* buttonLeft.png */; };
+		E9EE2EF81B0EDDCE007643D7 /* buttonRight.png in Resources */ = {isa = PBXBuildFile; fileRef = E9EE2EF41B0EDDCE007643D7 /* buttonRight.png */; };
+		E9EE2EF91B0EDDCE007643D7 /* buttonUp.png in Resources */ = {isa = PBXBuildFile; fileRef = E9EE2EF51B0EDDCE007643D7 /* buttonUp.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,12 +69,32 @@
 		E90B49D21B0A101400CFF754 /* FlappyBirdSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlappyBirdSwiftTests.swift; sourceTree = "<group>"; };
 		E90B4A1A1B0D04C100CFF754 /* boo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = boo1.png; sourceTree = "<group>"; };
 		E90B4A1B1B0D04C100CFF754 /* boo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = boo2.png; sourceTree = "<group>"; };
+		E9763BF51B0F6D0B00680833 /* activeButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = activeButton.png; sourceTree = "<group>"; };
+		E9763BF61B0F6D0B00680833 /* defaultButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defaultButton.png; sourceTree = "<group>"; };
+		E9763BFA1B0F78CC00680833 /* laser_ship.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = laser_ship.caf; sourceTree = "<group>"; };
+		E9763BFB1B0FA31900680833 /* asteroid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asteroid.png; sourceTree = "<group>"; };
+		E9763BFF1B10F84300680833 /* clouds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clouds.png; sourceTree = "<group>"; };
 		E9EE2ED01B0EC79C007643D7 /* starfield.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = starfield.png; sourceTree = "<group>"; };
 		E9EE2ED21B0EC7DD007643D7 /* f1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = f1.png; sourceTree = "<group>"; };
 		E9EE2ED31B0EC7DD007643D7 /* f2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = f2.png; sourceTree = "<group>"; };
 		E9EE2ED41B0EC7DD007643D7 /* f3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = f3.png; sourceTree = "<group>"; };
 		E9EE2ED51B0EC7DD007643D7 /* f4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = f4.png; sourceTree = "<group>"; };
 		E9EE2EDA1B0EC876007643D7 /* farback.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = farback.png; sourceTree = "<group>"; };
+		E9EE2EDC1B0ED3C2007643D7 /* h1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = h1.png; sourceTree = "<group>"; };
+		E9EE2EDD1B0ED3C2007643D7 /* h2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = h2.png; sourceTree = "<group>"; };
+		E9EE2EDE1B0ED3C2007643D7 /* h3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = h3.png; sourceTree = "<group>"; };
+		E9EE2EDF1B0ED3C2007643D7 /* h4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = h4.png; sourceTree = "<group>"; };
+		E9EE2EE01B0ED3C2007643D7 /* h5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = h5.png; sourceTree = "<group>"; };
+		E9EE2EE11B0ED3C2007643D7 /* h6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = h6.png; sourceTree = "<group>"; };
+		E9EE2EE81B0ED880007643D7 /* nebulla1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nebulla1.png; sourceTree = "<group>"; };
+		E9EE2EE91B0ED880007643D7 /* nebulla2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nebulla2.png; sourceTree = "<group>"; };
+		E9EE2EEA1B0ED880007643D7 /* nebulla3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nebulla3.png; sourceTree = "<group>"; };
+		E9EE2EEB1B0ED880007643D7 /* nebulla4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nebulla4.png; sourceTree = "<group>"; };
+		E9EE2EEC1B0ED880007643D7 /* nebulla5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nebulla5.png; sourceTree = "<group>"; };
+		E9EE2EF21B0EDDCE007643D7 /* buttonDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonDown.png; sourceTree = "<group>"; };
+		E9EE2EF31B0EDDCE007643D7 /* buttonLeft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonLeft.png; sourceTree = "<group>"; };
+		E9EE2EF41B0EDDCE007643D7 /* buttonRight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonRight.png; sourceTree = "<group>"; };
+		E9EE2EF51B0EDDCE007643D7 /* buttonUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonUp.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,16 +141,10 @@
 				E90B49BC1B0A101400CFF754 /* GameScene.swift */,
 				E90B49BE1B0A101400CFF754 /* GameViewController.swift */,
 				E90B49C01B0A101400CFF754 /* Main.storyboard */,
-				E90B4A1A1B0D04C100CFF754 /* boo1.png */,
-				E90B4A1B1B0D04C100CFF754 /* boo2.png */,
-				E9EE2ED01B0EC79C007643D7 /* starfield.png */,
+				E9763BF91B0F774900680833 /* Images */,
 				E90B49C31B0A101400CFF754 /* Images.xcassets */,
 				E90B49C51B0A101400CFF754 /* LaunchScreen.xib */,
-				E9EE2ED21B0EC7DD007643D7 /* f1.png */,
-				E9EE2ED31B0EC7DD007643D7 /* f2.png */,
-				E9EE2ED41B0EC7DD007643D7 /* f3.png */,
-				E9EE2ED51B0EC7DD007643D7 /* f4.png */,
-				E9EE2EDA1B0EC876007643D7 /* farback.png */,
+				E9763BFA1B0F78CC00680833 /* laser_ship.caf */,
 				E90B49B61B0A101400CFF754 /* Supporting Files */,
 			);
 			path = FlappyBirdSwift;
@@ -140,6 +173,40 @@
 				E90B49D11B0A101400CFF754 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E9763BF91B0F774900680833 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				E9763BFF1B10F84300680833 /* clouds.png */,
+				E9763BFB1B0FA31900680833 /* asteroid.png */,
+				E90B4A1A1B0D04C100CFF754 /* boo1.png */,
+				E90B4A1B1B0D04C100CFF754 /* boo2.png */,
+				E9EE2ED01B0EC79C007643D7 /* starfield.png */,
+				E9763BF51B0F6D0B00680833 /* activeButton.png */,
+				E9763BF61B0F6D0B00680833 /* defaultButton.png */,
+				E9EE2EF21B0EDDCE007643D7 /* buttonDown.png */,
+				E9EE2EF31B0EDDCE007643D7 /* buttonLeft.png */,
+				E9EE2EF41B0EDDCE007643D7 /* buttonRight.png */,
+				E9EE2EF51B0EDDCE007643D7 /* buttonUp.png */,
+				E9EE2ED21B0EC7DD007643D7 /* f1.png */,
+				E9EE2ED31B0EC7DD007643D7 /* f2.png */,
+				E9EE2ED41B0EC7DD007643D7 /* f3.png */,
+				E9EE2ED51B0EC7DD007643D7 /* f4.png */,
+				E9EE2EDC1B0ED3C2007643D7 /* h1.png */,
+				E9EE2EDD1B0ED3C2007643D7 /* h2.png */,
+				E9EE2EDE1B0ED3C2007643D7 /* h3.png */,
+				E9EE2EDF1B0ED3C2007643D7 /* h4.png */,
+				E9EE2EE01B0ED3C2007643D7 /* h5.png */,
+				E9EE2EE11B0ED3C2007643D7 /* h6.png */,
+				E9EE2EE81B0ED880007643D7 /* nebulla1.png */,
+				E9EE2EE91B0ED880007643D7 /* nebulla2.png */,
+				E9EE2EEA1B0ED880007643D7 /* nebulla3.png */,
+				E9EE2EEB1B0ED880007643D7 /* nebulla4.png */,
+				E9EE2EEC1B0ED880007643D7 /* nebulla5.png */,
+				E9EE2EDA1B0EC876007643D7 /* farback.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,6 +258,7 @@
 				TargetAttributes = {
 					E90B49B21B0A101400CFF754 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = ZTA9UL4UEX;
 					};
 					E90B49CB1B0A101400CFF754 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -222,18 +290,37 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9EE2EE41B0ED3C2007643D7 /* h3.png in Resources */,
+				E9EE2EE21B0ED3C2007643D7 /* h1.png in Resources */,
 				E9EE2ED91B0EC7DD007643D7 /* f4.png in Resources */,
+				E9EE2EE71B0ED3C2007643D7 /* h6.png in Resources */,
 				E9EE2ED61B0EC7DD007643D7 /* f1.png in Resources */,
+				E9EE2EE31B0ED3C2007643D7 /* h2.png in Resources */,
+				E9EE2EF01B0ED880007643D7 /* nebulla4.png in Resources */,
+				E9763C001B10F84300680833 /* clouds.png in Resources */,
+				E9EE2EED1B0ED880007643D7 /* nebulla1.png in Resources */,
+				E9763BFC1B0FA31900680833 /* asteroid.png in Resources */,
+				E9763BF81B0F6D0B00680833 /* defaultButton.png in Resources */,
+				E9EE2EE51B0ED3C2007643D7 /* h4.png in Resources */,
 				E90B49C71B0A101400CFF754 /* LaunchScreen.xib in Resources */,
 				E9EE2ED11B0EC79C007643D7 /* starfield.png in Resources */,
+				E9EE2EEE1B0ED880007643D7 /* nebulla2.png in Resources */,
+				E9EE2EF91B0EDDCE007643D7 /* buttonUp.png in Resources */,
 				E90B49C41B0A101400CFF754 /* Images.xcassets in Resources */,
+				E9EE2EE61B0ED3C2007643D7 /* h5.png in Resources */,
 				E90B49BB1B0A101400CFF754 /* GameScene.sks in Resources */,
 				E90B4A1D1B0D04C100CFF754 /* boo2.png in Resources */,
 				E90B4A1C1B0D04C100CFF754 /* boo1.png in Resources */,
 				E9EE2EDB1B0EC876007643D7 /* farback.png in Resources */,
+				E9EE2EF71B0EDDCE007643D7 /* buttonLeft.png in Resources */,
+				E9EE2EEF1B0ED880007643D7 /* nebulla3.png in Resources */,
 				E90B49C21B0A101400CFF754 /* Main.storyboard in Resources */,
 				E9EE2ED81B0EC7DD007643D7 /* f3.png in Resources */,
+				E9EE2EF61B0EDDCE007643D7 /* buttonDown.png in Resources */,
+				E9EE2EF11B0ED880007643D7 /* nebulla5.png in Resources */,
+				E9EE2EF81B0EDDCE007643D7 /* buttonRight.png in Resources */,
 				E9EE2ED71B0EC7DD007643D7 /* f2.png in Resources */,
+				E9763BF71B0F6D0B00680833 /* activeButton.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,9 +467,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FlappyBirdSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -390,9 +480,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FlappyBirdSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

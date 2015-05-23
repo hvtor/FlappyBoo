@@ -7,6 +7,7 @@
 //
 
 import SpriteKit
+import AVFoundation
 
 class GameScene: SKScene {
     
@@ -14,40 +15,41 @@ class GameScene: SKScene {
     
     var backgroundImage = SKSpriteNode()
     
+    var buttonUp = SKSpriteNode()
+    // Button Up Setup
+    
+
     override func didMoveToView(view: SKView) {
         /* Setup your scene here */
         
-        // Physics
-        self.physicsWorld.gravity = CGVectorMake(0.0, -3.0);
+        // Physics for the Cosmos
+        self.physicsWorld.gravity = CGVectorMake(0.0,-2.0)
+            
         
-        // Boo Setup
+        // Spaceship Animation Textures
         var booTexture1 = SKTexture(imageNamed:"f1")
         var booTexture2 = SKTexture(imageNamed:"f2")
         var booTexture3 = SKTexture(imageNamed:"f3")
         var booTexture4 = SKTexture(imageNamed:"f4")
 
-
         booTexture1.filteringMode = SKTextureFilteringMode.Nearest
-        
         
         boo = SKSpriteNode(texture: booTexture1)
         
         boo.position = CGPoint(x: self.frame.size.width * 0.1, y: self.frame.size.height * 0.6)
             
-
-        
+        // Spaceship Animation Setup
         var animation = SKAction.animateWithTextures([booTexture1, booTexture2, booTexture3, booTexture4], timePerFrame: 0.3)
         var makeBooFlap = SKAction.repeatActionForever(animation)
+        
         boo.runAction(makeBooFlap)
         
-        
-
-        //
+        // Spaceship setup
 
         boo.xScale = 2.0
         boo.yScale = 2.0
 
-        boo.zPosition = 20
+        boo.zPosition = 30
 
         boo.physicsBody = SKPhysicsBody(circleOfRadius:boo.size.height / 2.0)
         boo.physicsBody?.dynamic = true
@@ -55,56 +57,128 @@ class GameScene: SKScene {
         
         self.addChild(boo)
         
+        
+        
+        // Button Down Setup
+        var buttonDownTexture = SKTexture(imageNamed: "buttonDown")
+        var buttonDown = SKSpriteNode(texture:buttonDownTexture)
+        buttonDown.setScale(1.5)
+        buttonDown.position = CGPointMake(200, 140)
+        buttonDown.physicsBody?.dynamic = false
+        buttonDown.physicsBody?.allowsRotation = true
+        buttonDown.zPosition = 23
+        
+        buttonDown.userInteractionEnabled = true
+        
+        self.addChild(buttonDown)
+        
+        boo.physicsBody?.velocity = CGVectorMake(0,0)
+        func rocketButtonUp() {
+            println("up")
+            boo.physicsBody?.applyImpulse(CGVectorMake(0,20))
+        }
+        func rocketButtonDown(){
+            println("down")
+            boo.physicsBody?.applyImpulse(CGVectorMake(0,20))
+        }
+        
+        
+        // BackgroundImage Setup
         var backgroundImage = SKTexture(imageNamed: "farback")
         var farBg = SKSpriteNode(texture: backgroundImage)
         farBg.position = CGPoint(x: CGRectGetMidX(self.frame), y: CGRectGetMidY(self.frame))
         farBg.xScale = 2.0
         farBg.yScale = 2.0
-        
-        
-
         self.addChild(farBg)
         
-        
-        var foregroundBackgroundImage = SKTexture(imageNamed: "farback")
+        //Foreground Stars Setup
+        var foregroundBackgroundImage = SKTexture(imageNamed: "starfield")
         var foreGroundBg = SKSpriteNode(texture: foregroundBackgroundImage)
         foreGroundBg.position = CGPoint(x: CGRectGetMidX(self.frame), y: CGRectGetMidY(self.frame))
         foreGroundBg.xScale = 1.0
         foreGroundBg.yScale = 1.0
         
         foreGroundBg.zPosition = 10
+        
+        var cloud = SKTexture(imageNamed:"clouds")
+        var bottomCloud = SKSpriteNode()
+        bottomCloud.position = CGPoint(x:0,y:0)
+        bottomCloud.zPosition = 30
+        self.addChild(bottomCloud)
+
+        
+        
+        var animationNode = SKSpriteNode()
+
+        var foreGroundBgMove = SKAction.moveByX(-foreGroundBg.size.width, y: 0, duration: 2)
+        var replace = SKAction.moveByX(foreGroundBg.size.width, y: 0, duration: 0)
+        var moveBGForEver = SKAction.repeatActionForever(SKAction.sequence([foreGroundBgMove,replace]))
+        
+//        for var i:CGFloat = 0; i < 3; i++ {
+//            var backGround = SKSpriteNode(texture: foregroundBackgroundImage)
+//            backGround.position = CGPoint(x: foregroundBackgroundImage.size.width / 2 + bgTexture.size.width * i, y:CGRectGetMidY(self.frame))
+//            backGround.size.height = self.frame.height
+//            
+//            backGround.runAction(moveBGForEver)
+//            movingObjects.addChild(backGround)
+//        }
+
+        
         self.addChild(foreGroundBg)
 
-        
-        // Ground
-        
-        var ground = SKNode()
-        var groundTexture = SKTexture(imageNamed: "ground")
-        var groundSprite = SKSpriteNode(texture: groundTexture)
+//        var nebulla1 = SKNode()
+//        var nebullaTexture1 = SKTexture(imageNamed: "nebulla4")
+//        var nebullaSprite1 = SKSpriteNode(texture: nebullaTexture1)
+//        
+//        nebullaSprite1.setScale(2.0)
+//        nebullaSprite1.position = CGPointMake(600, 600)
+//        nebullaSprite1.physicsBody?.dynamic = false
+//        nebullaSprite1.physicsBody?.allowsRotation = true
+//        nebullaSprite1.zPosition  = 23
+//        self.addChild(nebullaSprite1)
+//
+//        let pressButtonUp = UILongPressGestureRecognizer(target:self, action:"makeRocketGoUp")
+//        let pressButtonDown = UILongPressGestureRecognizer(target:self, action:"makeRocketGoDown")
+//
 
-        groundSprite.setScale(2)
-        groundSprite.physicsBody = SKPhysicsBody(rectangleOfSize:CGSizeMake(self.frame.size.width, groundTexture.size().height * 1.0))
-        groundSprite.position = CGPointMake(self.size.width/2, groundSprite.size.height/10)
-        groundSprite.physicsBody?.dynamic = false
-        groundSprite.physicsBody?.allowsRotation = false
-
-
-
-        self.addChild(groundSprite)
-
-        
+}
+    
+    func playSound(audio:String, shouldRepeat:Bool)
+    {
+        var sound = SKAction.playSoundFileNamed(audio, waitForCompletion: false)
+        runAction(sound)
     }
+    
+    // Button Up Setup
+    var buttonUpTexture = SKTexture(imageNamed: "buttonUp")
+    var buttonUp = SKSpriteNode(texture: buttonUpTexture)
+    
+    
+    
+    buttonUp.physicsBody?.dynamic = false
+    buttonUp.physicsBody?.allowsRotation = false
+    buttonUp.setScale(1.5)
+    buttonUp.position = CGPointMake(200, 210)
+    buttonUp.physicsBody?.dynamic = false
+    buttonUp.physicsBody?.allowsRotation = true
+    buttonUp.zPosition  = 23
+    buttonUp.name = "buttonUpPressed"
+    buttonUp.userInteractionEnabled = true
+    
+    self.addChild(buttonUp)
 
     override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
         /* Called when a touch begins */
-        println("Flappy is Flying")
 
-        
         for touch in (touches as! Set<UITouch>) {
-            boo.physicsBody?.velocity = CGVectorMake(0,0)
+            let location = (touch as UITouch).locationInNode(self)
 
-            boo.physicsBody?.applyImpulse(CGVectorMake(0, 35))
-            
+            if self.nodeAtPoint(location) == touch.locationInNode(buttonUp) {
+
+                    self.boo.physicsBody?.applyImpulse(CGVectorMake(0, 34))
+                
+            }
+        
         }
     }
    
